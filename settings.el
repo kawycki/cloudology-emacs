@@ -5,7 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (eshell-toggle quelpa-use-package quelpa beginend projectile rg wgrep transient which-key compdef counsel swiper ivy-prescient command-log-mode try prescient ivy company page-break-lines no-littering restart-emacs doom-modeline all-the-icons memoize gcmh doom-themes use-package)))
+    (persistent-scratch eshell-toggle quelpa-use-package quelpa beginend projectile rg wgrep transient which-key compdef counsel swiper ivy-prescient command-log-mode try prescient ivy company page-break-lines no-littering restart-emacs doom-modeline all-the-icons memoize gcmh doom-themes use-package)))
  '(user-full-name "Kamil Wydrzycki")
  '(user-mail-address "kamwyd@gmail.com"))
 (custom-set-faces

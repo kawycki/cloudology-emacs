@@ -77,6 +77,11 @@
 (use-package no-littering
   :demand t)
 
+(use-package persistent-scratch
+  :demand t
+  :config
+  (persistent-scratch-setup-default))
+
 (use-package recentf
   :ensure nil
   :hook (after-init . recentf-mode)
