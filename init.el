@@ -14,6 +14,7 @@
 (require 'init-base)
 (require 'init-ui)
 (require 'init-buffer)
+(require 'init-dired)
 (require 'init-shell)
 (require 'init-utils)
 (require 'init-projectile)
