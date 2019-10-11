@@ -18,5 +18,6 @@
 (require 'init-utils)
 (require 'init-projectile)
 (require 'init-completion)
+(require 'init-vcs)
 
 (toggle-frame-maximized)
