@@ -13,6 +13,7 @@
 (require 'init-package)
 (require 'init-base)
 (require 'init-ui)
+(require 'init-edit)
 (require 'init-buffer)
 (require 'init-dired)
 (require 'init-shell)
