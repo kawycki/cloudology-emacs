@@ -21,4 +21,6 @@
 (require 'init-completion)
 (require 'init-vcs)
 
+(require 'init-prog)
+
 (toggle-frame-maximized)
