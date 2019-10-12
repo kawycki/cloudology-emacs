@@ -64,5 +64,13 @@
 (use-package page-break-lines
   :hook ((prog-mode . page-break-lines-mode)))
 
+(use-package paren
+  :ensure nil
+  :demand t
+  :hook (find-file . show-paren-mode)
+  :config
+  (setq show-paren-delay 0.1
+        show-paren-when-point-inside-paren t))
+
 (provide 'init-ui)
 ;;; init-ui.el ends here
