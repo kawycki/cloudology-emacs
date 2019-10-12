@@ -24,6 +24,8 @@
 
 ;;; Code:
 
+(use-package esup)
+
 (use-package transient)
 
 (use-package wgrep)
