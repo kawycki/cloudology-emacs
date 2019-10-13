@@ -61,6 +61,14 @@
 
 (load-theme 'doom-vibrant t)
 
+(use-package ediff
+  :ensure nil
+  :hook (ediff-quit . winner-undo)
+  :config
+  (setq ediff-diff-options "-w"
+        ediff-window-setup-function 'ediff-setup-windows-plain
+        ediff-split-window-function 'split-window-horizontally))
+
 (use-package page-break-lines
   :hook ((prog-mode . page-break-lines-mode)))
 
