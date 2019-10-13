@@ -69,6 +69,12 @@
         ediff-window-setup-function 'ediff-setup-windows-plain
         ediff-split-window-function 'split-window-horizontally))
 
+(use-package hydra
+  :demand t
+  :config
+  (use-package pretty-hydra)
+  (use-package major-mode-hydra))
+
 (use-package page-break-lines
   :hook ((prog-mode . page-break-lines-mode)))
 
