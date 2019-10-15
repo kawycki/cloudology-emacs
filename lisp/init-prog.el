@@ -31,5 +31,7 @@
         flycheck-emacs-lisp-load-path 'inherit
         flycheck-check-syntax-automatically '(save mode-enabled)))
 
+(use-package json-mode)
+
 (provide 'init-prog)
 ;;; init-prog.el ends here
