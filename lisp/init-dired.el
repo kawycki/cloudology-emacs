@@ -42,6 +42,8 @@
   :demand t
   :hook (dired-mode . dired-omit-mode)
   :config
+  (add-to-list 'dired-omit-extensions ".sln")
+  (add-to-list 'dired-omit-extensions ".csproj")
   (setq dired-omit-verbose nil))
 
 (provide 'init-dired)

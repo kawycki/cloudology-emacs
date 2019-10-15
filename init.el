@@ -23,5 +23,6 @@
 (require 'init-vcs)
 
 (require 'init-prog)
+(require 'init-dotnet)
 
 (toggle-frame-maximized)
