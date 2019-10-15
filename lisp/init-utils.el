@@ -26,6 +26,8 @@
 
 (use-package esup)
 
+(use-package free-keys)
+
 (use-package transient)
 
 (use-package wgrep)
