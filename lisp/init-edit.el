@@ -24,6 +24,15 @@
 
 ;;; Code:
 
+(use-package avy
+  :commands avy-go-to-char-2 avy-goto-char-timer
+  :bind (("C-c C-c" . 'avy-goto-char-timer))
+  :config
+  (setq avy-all-windows nil
+        avy-background t
+        avy-style 'at-full
+        avy-timeout-seconds 0.8))
+
 (use-package smartparens
   :hook (after-init . smartparens-global-mode)
   :bind (("<M-right>" . sp-forward-sexp)
