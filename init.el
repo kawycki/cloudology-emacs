@@ -24,5 +24,6 @@
 
 (require 'init-prog)
 (require 'init-dotnet)
+(require 'init-go)
 
 (toggle-frame-maximized)
