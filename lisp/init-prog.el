@@ -33,5 +33,7 @@
 
 (use-package json-mode)
 
+(use-package yaml-mode)
+
 (provide 'init-prog)
 ;;; init-prog.el ends here
