@@ -28,6 +28,8 @@
 
 (use-package all-the-icons)
 
+(use-package posframe)
+
 (use-package prescient
   :demand t)
 

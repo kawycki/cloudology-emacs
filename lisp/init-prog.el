@@ -25,11 +25,18 @@
 ;;; Code:
 
 (use-package flycheck
-  :hook (after-init . global-flycheck-mode)
+  :hook (prog-mode . flycheck-mode)
   :config
   (setq flycheck-indication-mode 'left-fringe
         flycheck-emacs-lisp-load-path 'inherit
         flycheck-check-syntax-automatically '(save mode-enabled)))
+
+(use-package flycheck-posframe
+  :hook (prog-mode . flycheck-posframe-mode)
+  :config
+  (setq flycheck-posframe-border-width 8
+        flycheck-posframe-position 'window-bottom-right-corner)
+  (flycheck-posframe-configure-pretty-defaults))
 
 (use-package json-mode)
 
