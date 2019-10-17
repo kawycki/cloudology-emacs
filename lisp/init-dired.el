@@ -31,7 +31,10 @@
          ("C-c f" . find-lisp-find-dired))
   :config
   (setq dired-recursive-copies 'always
-        dired-recursive-deletes 'top))
+        dired-recursive-deletes 'top)
+  (when (executable-find "ls")
+    (setq ls-lisp-use-insert-directory-program t
+          dired-listing-switches "-alh --group-directories-first")))
 
 (use-package diredfl
   :demand t
