@@ -29,6 +29,7 @@
   :commands eshell/alias
   :hook (eshell-mode . (lambda ()
                          (eshell/alias "f" "find-file $1")
+                         (eshell/alias "ff" "find-file-other-window $1")
                          (eshell/alias "d" "dired $1")
                          (eshell/alias "ll" "ls -l")
                          (eshell/alias "la" "ls -al")))
