@@ -91,6 +91,18 @@
 
 (use-package restart-emacs)
 
+(use-package whitespace
+  :ensure nil
+  :config
+  (setq whitespace-line-column nil
+        whitespace-style
+        '(face indentation tabs tab-mark spaces space-mark newline newline-mark
+               trailing)
+        whitespace-display-mappings
+        '((tab-mark ?\t [?› ?\t])
+          (newline-mark ?\n [?¬ ?\n])
+          (space-mark ?\  [?·] [?.]))))
+
 (require 'quelpa)
 
 (use-package so-long
