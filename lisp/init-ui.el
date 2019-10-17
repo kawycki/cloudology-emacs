@@ -57,7 +57,7 @@
   :config
   (setq doom-modeline-project-root t
         doom-modeline-buffer-file-name-style 'truncate-upto-project
-        doom-modeline-minor-modes t))
+        doom-modeline-minor-modes nil))
 
 (load-theme 'doom-vibrant t)
 
