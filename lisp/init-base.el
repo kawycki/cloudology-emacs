@@ -91,6 +91,15 @@
 
 (use-package restart-emacs)
 
+(require 'quelpa)
+
+(use-package so-long
+  :ensure nil
+  :demand t
+  :quelpa (so-long :fetcher github :repo "kamil-wydrzycki/so-long")
+  :config
+  (global-so-long-mode))
+
 (use-package text-mode
   :ensure nil
   :hook (text-mode . visual-line-mode))
