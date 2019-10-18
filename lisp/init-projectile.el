@@ -67,5 +67,14 @@
   
   (bind-key "C-c p C-s" #'+add-project))
 
+(use-package ibuffer-projectile
+  :hook ((ibuffer . (lambda ()
+                      (ibuffer-projectile-set-filter-groups)
+                      (unless (eq ibuffer-sorting-mode 'alphabetic)
+                        (ibuffer-do-sort-by-alphabetic)))))
+  :config
+  (setq ibuffer-projectile-prefix "Project: ")
+  (setq ibuffer-filter-group-name-face 'font-lock-function-name-face))
+
 (provide 'init-projectile)
 ;;; init-projectile.el ends here
