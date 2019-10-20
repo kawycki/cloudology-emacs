@@ -26,5 +26,10 @@
 
 (use-package rotate)
 
+(use-package zoom
+  :demand t
+  :config
+  (setq zoom-size '(0.618 . 0.618)))
+
 (provide 'init-window)
 ;;; init-window.el ends here
