@@ -12,6 +12,7 @@
 
 (require 'init-package)
 (require 'init-base)
+(require 'init-window)
 (require 'init-ui)
 (require 'init-edit)
 (require 'init-buffer)
