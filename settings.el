@@ -14,4 +14,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :background "#242730" :foreground "#bbc2cf" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 108 :width normal :foundry "outline" :family "Fira Code"))))
+ '(flycheck-error ((t (:underline "#ff665c"))))
+ '(flycheck-info ((t (:underline "#7bc275"))))
+ '(flycheck-warning ((t (:underline "#FCCE7B"))))
  '(show-paren-match ((t (:foreground "pale green" :underline t :weight ultra-bold)))))
