@@ -59,7 +59,7 @@
         doom-modeline-buffer-file-name-style 'truncate-upto-project
         doom-modeline-minor-modes nil))
 
-(load-theme 'doom-vibrant t)
+(load-theme 'doom-nord t)
 
 (use-package ediff
   :ensure nil
