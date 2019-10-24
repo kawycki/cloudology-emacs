@@ -28,6 +28,8 @@
 
 (use-package free-keys)
 
+(use-package playground)
+
 (use-package transient)
 
 (use-package wgrep)
