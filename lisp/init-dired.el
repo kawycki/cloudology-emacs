@@ -49,5 +49,26 @@
   (add-to-list 'dired-omit-extensions ".csproj")
   (setq dired-omit-verbose nil))
 
+(use-package dired-hacks-utils)
+
+(use-package dired-subtree)
+
+(use-package dired-sidebar
+  :bind ([f6] . 'dired-sidebar-toggle-with-current-directory)
+  :config
+  (use-package vscode-icon
+    :config
+    (add-to-list 'vscode-icon-file-alist '("cs" . "csharp")))
+
+  (setq dired-sidebar-follow-file-at-point-on-toggle-open t
+        dired-sidebar-open-file-in-most-recently-used-window t
+        dired-sidebar-recenter-cursor-on-follow-file t
+        dired-sidebar-should-follow-file nil
+        dired-sidebar-stale-buffer-time-idle-delay 0.1
+        dired-sidebar-theme 'vscode
+        dired-sidebar-refresh-on-projectile-switch t
+        dired-sidebar-use-custom-modeline nil
+        dired-sidebar-use-magit-integration t))
+
 (provide 'init-dired)
 ;;; init-dired.el ends here
