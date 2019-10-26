@@ -33,5 +33,7 @@
 (use-package prescient
   :demand t)
 
+(use-package spinner)
+
 (provide 'init-libs)
 ;;; init-libs.el ends here
