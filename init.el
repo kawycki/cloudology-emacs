@@ -27,5 +27,6 @@
 (require 'init-dotnet)
 (require 'init-go)
 (require 'init-web)
+(require 'init-markdown)
 
 (toggle-frame-maximized)
