@@ -40,6 +40,30 @@
   (set-face-attribute 'flycheck-posframe-warning-face nil :inherit 'warning)
   (set-face-attribute 'flycheck-posframe-error-face nil :inherit 'error))
 
+(use-package lsp-mode
+  :config
+  (use-package lsp-clients
+    :ensure nil)
+
+  (setq lsp-auto-guess-root t
+        lsp-prefer-flymake nil
+        lsp-keep-workspace-alive nil)
+
+  (use-package lsp-ui
+    :init (setq lsp-ui-doc-enable t
+                lsp-ui-doc-use-webkit nil
+                lsp-ui-doc-delay 0.5
+                lsp-ui-doc-include-signature t
+                lsp-ui-doc-position 'top
+                lsp-ui-doc-border (face-foreground 'default)
+
+                lsp-ui-sideline-enable t
+                lsp-ui-sideline-show-hover nil
+                lsp-ui-sideline-ignore-duplicate t))
+
+  (use-package company-lsp
+    :init
+    (setq company-lsp-cache-candidates 'auto)))
 
 (use-package json-mode)
 
