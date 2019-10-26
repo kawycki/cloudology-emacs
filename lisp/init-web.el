@@ -33,16 +33,18 @@
   :mode "\\.m?js\\'"
   :interpreter "node"
   :hook ((js2-mode . js2-imenu-extras-mode)
-         (js2-mode . js2-highlight-unused-variables-mode))
+         (js2-mode . js2-highlight-unused-variables-mode)
+         (js2-mode . lsp-deferred))
+  :company company-dabbrev company-dabbrev-code
   :config
   (setq js-chain-indent t
         js2-skip-preprocessor-directives t
         js2-highlight-level 3
         js2-highlight-external-variables t)
-  
+
   (add-to-list 'projectile-project-root-files "package.json")
   (add-to-list 'projectile-globally-ignored-directories "node_modules")
-  
+
   (set-face-attribute 'js2-error nil :foreground nil :underline '(:color "red" :style line)))
 
 (use-package typescript-mode
