@@ -65,5 +65,9 @@
   :bind
   (("C-x C-r" . #'counsel-recentf)))
 
+(use-package counsel-etags
+  :config
+  (setq counsel-etags-tags-program "ctags"))
+
 (provide 'init-completion)
 ;;; init-completion.el ends here
