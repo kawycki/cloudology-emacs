@@ -89,5 +89,11 @@
 (use-package rainbow-delimiters
   :hook ((emacs-lisp-mode lisp-mode) . rainbow-delimiters-mode))
 
+(use-package treemacs
+  :bind ([f8] . treemacs)
+  :config
+  (setq treemacs-follow-after-init t
+        treemacs-is-never-other-window t
+        treemacs-sorting 'alphabetic-case-insensitive-desc))
 (provide 'init-ui)
 ;;; init-ui.el ends here
