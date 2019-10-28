@@ -86,5 +86,8 @@
   (setq show-paren-delay 0.1
         show-paren-when-point-inside-paren t))
 
+(use-package rainbow-delimiters
+  :hook ((emacs-lisp-mode lisp-mode) . rainbow-delimiters-mode))
+
 (provide 'init-ui)
 ;;; init-ui.el ends here
