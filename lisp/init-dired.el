@@ -65,10 +65,14 @@
         dired-sidebar-recenter-cursor-on-follow-file t
         dired-sidebar-should-follow-file nil
         dired-sidebar-stale-buffer-time-idle-delay 0.1
-        dired-sidebar-theme 'vscode
+        dired-sidebar-theme 'none
         dired-sidebar-refresh-on-projectile-switch t
         dired-sidebar-use-custom-modeline nil
-        dired-sidebar-use-magit-integration t))
+        dired-sidebar-use-magit-integration t)
+
+  (add-to-list 'dired-sidebar-special-refresh-commands 'dired-sidebar-find-file)
+  (add-to-list 'dired-sidebar-special-refresh-commands 'dired-sidebar-subtree-toggle)
+  (add-to-list 'dired-sidebar-special-refresh-commands 'dired-sidebar-up-directory))
 
 (provide 'init-dired)
 ;;; init-dired.el ends here

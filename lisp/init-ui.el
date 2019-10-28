@@ -95,5 +95,11 @@
   (setq treemacs-follow-after-init t
         treemacs-is-never-other-window t
         treemacs-sorting 'alphabetic-case-insensitive-desc))
+
+(use-package treemacs-icons-dired
+  :demand t
+  :config
+  (treemacs-icons-dired-mode))
+
 (provide 'init-ui)
 ;;; init-ui.el ends here
