@@ -32,7 +32,9 @@
   :config
   (when (executable-find "goimports")
     (setq gofmt-command "goimports"))
-  (add-hook 'before-save-hook 'gofmt-before-save))
+  (add-hook 'before-save-hook 'gofmt-before-save)
+
+  (add-to-list 'projectile-project-root-files "go.mod"))
 
 (use-package company-go
   :config
