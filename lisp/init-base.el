@@ -64,6 +64,11 @@
   :config
   (beginend-global-mode))
 
+(use-package bookmark
+  :ensure nil
+  :config
+  (setq bookmark-bmenu-use-header-line nil))
+
 (use-package command-log-mode)
 
 (use-package delsel
