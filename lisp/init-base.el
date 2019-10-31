@@ -74,6 +74,10 @@
   :config
   (gcmh-mode 1))
 
+(use-package hideshow
+  :ensure nil
+  :hook (prog-mode . hs-minor-mode))
+
 (use-package no-littering
   :demand t)
 
