@@ -45,7 +45,7 @@
   (use-package lsp-clients
     :ensure nil)
 
-  (setq lsp-auto-guess-root t
+  (setq lsp-auto-guess-root nil
         lsp-prefer-flymake nil
         lsp-keep-workspace-alive nil)
 
