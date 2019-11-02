@@ -40,5 +40,18 @@
   :config
   (setq company-go-show-annotation t))
 
+;; Install: go get -u github.com/golangci/golangci-lint/cmd/golangci-lint
+(use-package flycheck-golangci-lint
+  :if (executable-find "golangci-lint")
+  :after flycheck
+  :hook (go-mode . (lambda ()
+                     (setq flycheck-disabled-checkers '(go-gofmt
+                                                        go-golint
+                                                        go-vet
+                                                        go-build
+                                                        go-test
+                                                        go-errcheck))
+                     (flycheck-golangci-lint-setup))))
+
 (provide 'init-go)
 ;;; init-go.el ends here
