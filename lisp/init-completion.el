@@ -70,5 +70,18 @@
   :config
   (setq counsel-etags-tags-program "ctags"))
 
+(use-package yasnippet
+  :hook (after-init . yas-global-mode)
+  :bind (("C-c y n" . 'yas-new-snippet)
+         ("C-c y i" . 'yas-insert-snippet)
+         ("C-c y v" . 'yas-visit-snippet-file)
+         ("C-c y r" . 'yas-reload-all)
+         ("C-c y c" . 'aya-create)
+         ("C-c y e" . 'aya-expand))
+  :config
+  (use-package yasnippet-snippets)
+
+  (use-package auto-yasnippet))
+
 (provide 'init-completion)
 ;;; init-completion.el ends here
