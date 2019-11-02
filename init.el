@@ -26,6 +26,7 @@
 (require 'init-prog)
 (require 'init-dotnet)
 (require 'init-go)
+(require 'init-python)
 (require 'init-web)
 (require 'init-markdown)
 
