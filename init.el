@@ -14,6 +14,7 @@
 (require 'init-base)
 (require 'init-window)
 (require 'init-ui)
+(require 'init-keybinds)
 (require 'init-edit)
 (require 'init-buffer)
 (require 'init-dired)
