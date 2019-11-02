@@ -44,6 +44,12 @@
       scroll-margin 0
       scroll-conservatively 1000)
 
+(use-package diff-hl
+  :hook (dired-mode . diff-hl-dired-mode)
+  :hook (magit-post-refresh . diff-hl-magit-post-refresh)
+  :config
+  (diff-hl-margin-mode))
+
 (use-package display-line-numbers
   :ensure nil
   :hook (prog-mode . display-line-numbers-mode))
