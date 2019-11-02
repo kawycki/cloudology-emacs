@@ -26,6 +26,9 @@
 
 (use-package company
   :hook (after-init . global-company-mode)
+  :init
+  (setq company-global-modes
+        '(not eshell-mode help-mode inferior-python-mode message-mode shell-mode))
   :config
   (setq company-idle-delay 0.2
         company-minimum-prefix-length 2
