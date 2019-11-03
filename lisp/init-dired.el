@@ -28,7 +28,7 @@
   :ensure nil
   :bind (("C-x j" . dired-jump)
          :map dired-mode-map
-         ("C-c f" . find-lisp-find-dired))
+         ("C-c f" . find-dired))
   :config
   (setq dired-recursive-copies 'always
         dired-recursive-deletes 'top)
@@ -73,6 +73,11 @@
   (add-to-list 'dired-sidebar-special-refresh-commands 'dired-sidebar-find-file)
   (add-to-list 'dired-sidebar-special-refresh-commands 'dired-sidebar-subtree-toggle)
   (add-to-list 'dired-sidebar-special-refresh-commands 'dired-sidebar-up-directory))
+
+(use-package fd-dired
+  :when (executable-find "fd")
+  :init
+  (advice-add 'find-dired :override 'fd-dired))
 
 (provide 'init-dired)
 ;;; init-dired.el ends here
