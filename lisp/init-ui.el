@@ -44,6 +44,8 @@
       scroll-margin 0
       scroll-conservatively 1000)
 
+(add-hook 'window-setup-hook 'window-divider-mode)
+
 (use-package diff-hl
   :hook (dired-mode . diff-hl-dired-mode)
   :hook (magit-post-refresh . diff-hl-magit-post-refresh)
