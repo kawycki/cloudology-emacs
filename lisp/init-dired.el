@@ -81,5 +81,9 @@
 
 (use-package dired-narrow)
 
+(use-package dired-filter
+  :config
+  (dired-filter-mode))
+
 (provide 'init-dired)
 ;;; init-dired.el ends here
