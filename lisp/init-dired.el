@@ -79,5 +79,7 @@
   :init
   (advice-add 'find-dired :override 'fd-dired))
 
+(use-package dired-narrow)
+
 (provide 'init-dired)
 ;;; init-dired.el ends here
