@@ -53,7 +53,7 @@
   
   (ivy-mode)
 
-  (eval-after-load 'hydra
+  (with-eval-after-load 'hydra
     (use-package ivy-hydra)))
 
 (use-package hippie-expand
