@@ -31,6 +31,10 @@
   :bind ([remap other-window] . ace-window)
   :hook (after-init . ace-window-display-mode))
 
+(use-package eyebrowse
+  :config
+  (eyebrowse-mode))
+
 (use-package rotate)
 
 (use-package zoom
