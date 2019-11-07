@@ -37,5 +37,7 @@
 
 (use-package spinner)
 
+(use-package tree-mode)
+
 (provide 'init-libs)
 ;;; init-libs.el ends here
