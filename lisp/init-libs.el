@@ -24,6 +24,8 @@
 
 ;;; Code:
 
+(use-package bui)
+
 (use-package memoize)
 
 (use-package all-the-icons)
