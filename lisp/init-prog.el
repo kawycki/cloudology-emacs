@@ -65,6 +65,16 @@
     :init
     (setq company-lsp-cache-candidates 'auto)))
 
+(use-package dap-mode
+  :hook (((go-mode js-mode js2-mode python-mode) . dap-mode)
+         (dap-mode . dap-ui-mode)
+         (dap-session-created . (lambda (&_rest) (dap-hydra)))
+         (dap-terminated . (lambda (&_rest) (dap-hydra/nil)))
+
+         (python-mode . (lambda () (require 'dap-python)))
+         (go-mode . (lambda () (require 'dap-go)))
+         ((js-mode js2-mode) . (lambda () (require 'dap-chrome)))))
+
 (use-package json-mode)
 
 (use-package yaml-mode)
