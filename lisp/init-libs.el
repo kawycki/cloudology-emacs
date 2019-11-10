@@ -37,6 +37,8 @@
 
 (use-package spinner)
 
+(use-package tablist)
+
 (use-package tree-mode)
 
 (provide 'init-libs)
