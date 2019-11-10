@@ -30,6 +30,8 @@
 
 (use-package all-the-icons)
 
+(use-package magit-popup)
+
 (use-package posframe)
 
 (use-package prescient
