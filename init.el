@@ -11,6 +11,7 @@
 (load custom-file 'no-error)
 
 (require 'init-package)
+(require 'init-libs)
 (require 'init-base)
 (require 'init-window)
 (require 'init-ui)
@@ -25,6 +26,7 @@
 (require 'init-vcs)
 
 (require 'init-prog)
+(require 'init-dev)
 (require 'init-dotnet)
 (require 'init-go)
 (require 'init-python)
