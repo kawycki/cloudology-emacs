@@ -33,6 +33,9 @@
         avy-style 'at-full
         avy-timeout-seconds 0.8))
 
+(use-package goto-chg
+  :bind ("C-," . goto-last-change))
+
 (use-package smartparens
   :hook (after-init . smartparens-global-mode)
   :bind (("<M-right>" . sp-forward-sexp)
