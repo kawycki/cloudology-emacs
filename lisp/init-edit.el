@@ -58,5 +58,13 @@
   (sp-pair "[" nil :post-handlers
            '(:add (smartparens-pair-newline-and-indent "RET"))))
 
+(use-package undo-tree
+  :hook (after-init . global-undo-tree-mode)
+  :config
+  (setq undo-tree-auto-save-history t
+        undo-limit 800000
+        undo-strong-limit 12000000
+        undo-outer-limit 120000000))
+
 (provide 'init-edit)
 ;;; init-edit.el ends here
