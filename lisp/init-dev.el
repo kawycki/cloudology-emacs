@@ -40,5 +40,7 @@ Wrapper around function `shell-command-to-string'."
 
 (require 'docker)
 
+(use-package k8s-mode)
+
 (provide 'init-dev)
 ;;; init-dev.el ends here
