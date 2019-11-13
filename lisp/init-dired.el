@@ -47,6 +47,8 @@
   :config
   (add-to-list 'dired-omit-extensions ".sln")
   (add-to-list 'dired-omit-extensions ".csproj")
+  (setq  dired-omit-files
+        (concat dired-omit-files "\\|^flycheck"))
   (setq dired-omit-verbose nil))
 
 (use-package dired-hacks-utils)
