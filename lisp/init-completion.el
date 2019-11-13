@@ -56,6 +56,16 @@
   (with-eval-after-load 'hydra
     (use-package ivy-hydra)))
 
+(use-package ivy-posframe
+  :demand t
+  :config
+  (setq ivy-posframe-border-width 8
+        ivy-posframe-display-functions-alist
+        '((counsel-M-x . ivy-posframe-display-at-frame-top-center))
+        ivy-posframe-height-alist '((counsel-M-x . 20)))
+
+  (ivy-posframe-mode))
+
 (use-package hippie-expand
   :ensure nil
   :bind (("M-/" . hippie-expand)))
@@ -64,7 +74,8 @@
 
 (use-package counsel
   :bind
-  (("C-x C-r" . #'counsel-recentf)))
+  (("C-x C-r" . #'counsel-recentf)
+   ("M-x" . #'counsel-M-x)))
 
 (use-package counsel-etags
   :config
