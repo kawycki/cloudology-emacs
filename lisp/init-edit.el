@@ -33,6 +33,9 @@
         avy-style 'at-full
         avy-timeout-seconds 0.8))
 
+(use-package expand-region
+  :bind ("C-=". er/expand-region))
+
 (use-package goto-chg
   :bind ("C-," . goto-last-change))
 
