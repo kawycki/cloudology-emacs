@@ -42,8 +42,14 @@
 (use-package ivy
   :demand t
   :config
-  (setq ivy-use-virtual-buffers t)
-  
+  (setq ivy-display-style 'fancy
+        ivy-format-functions-alist '((t . ivy-format-function-line))
+        ivy-initial-inputs-alist nil
+        ivy-use-selectable-prompt t
+        ivy-use-virtual-buffers t
+        ivy-virtual-abbreviate 'full
+        ivy-wrap t)
+
   (use-package ivy-prescient
     :demand t
     :after ivy
