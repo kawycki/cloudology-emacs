@@ -28,15 +28,7 @@
 
 (use-package docker
   :config
-  (setq docker-container-shell-file-name "cmdproxy.exe")
-
-  (defun cloudology/docker-utils-shell-command-to-string (command)
-  "Execute shell command COMMAND and return its output as a string.
-Wrapper around function `shell-command-to-string'."
-  (let ((shell-file-name docker-container-shell-file-name))
-    (shell-command-to-string command)))
-
-  (fset 'docker-utils-shell-command-to-string 'cloudology/docker-utils-shell-command-to-string))
+  (setq docker-container-shell-file-name "cmdproxy.exe"))
 
 (require 'docker)
 
