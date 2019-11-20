@@ -26,5 +26,7 @@
 
 (use-package general)
 
+(use-package ryo-modal)
+
 (provide 'init-keybinds)
 ;;; init-keybinds.el ends here
