@@ -24,6 +24,8 @@
 
 ;;; Code:
 
+(use-package buffer-move)
+
 (use-package ibuffer
   :ensure nil
   :bind (("C-x C-b" . ibuffer)))
