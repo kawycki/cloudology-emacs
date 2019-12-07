@@ -19,4 +19,5 @@
  '(flycheck-error ((t (:underline "#ff665c"))))
  '(flycheck-info ((t (:underline "#7bc275"))))
  '(flycheck-warning ((t (:underline "#FCCE7B"))))
- '(show-paren-match ((t (:foreground "pale green" :underline t :weight ultra-bold)))))
+ '(rg-filename-face ((t (:inherit rg-info-face :foreground "royal blue"))))
+ '(show-paren-match ((t (:background "#373E4C" :foreground "light sky blue" :underline t :weight ultra-bold)))))

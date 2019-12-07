@@ -32,12 +32,16 @@
       create-lockfiles nil
       load-prefer-newer t
 
+      fast-but-imprecise-scrolling t
+      frame-inhibit-implied-resize t
       inhibit-compacting-font-caches t
       idle-update-delay 2
       bidi-display-reordering nil
-      w32-pipe-read-delay 0
 
       frame-title-format '(buffer-file-name "%f" ("%b")))
+
+(setq w32-get-true-file-attributes nil
+      w32-pipe-read-delay 0)
 
 (when (fboundp 'set-charset-priority)
   (set-charset-priority 'unicode))

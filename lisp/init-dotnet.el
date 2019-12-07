@@ -32,7 +32,7 @@
                           (setq c-syntactic-indentation t
                                 c-basic-offset 4
                                 tab-width 4))))
-  :company company-omnisharp company-dabbrev-code
+  :company company-omnisharp company-dabbrev company-dabbrev-code company-yasnippet
   :config
   (use-package dotnet)
   

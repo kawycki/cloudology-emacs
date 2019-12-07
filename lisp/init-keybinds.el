@@ -28,5 +28,26 @@
 
 (use-package ryo-modal)
 
+(pretty-hydra-define main-window (:foreign-keys warn :quit-key "q")
+  ("Search"
+   (("s" (call-interactively 'rg-dwim-project-dir) "search in project" :exit t)
+    ("t" (call-interactively 'counsel-etags-find-tag-at-point) "search by tags" :exit t)
+    ("i" (call-interactively 'counsel-rg) "interactive search" :exit t))
+   "Buffer"
+   (("b" 'bury-buffer "hide buffer")
+    ("l" 'buf-move-left "swap with left buffer")
+    ("r" 'buf-move-right "swap with right buffer"))
+   "UI"
+   (("d" diff-hl-mode "change indicators" :toggle t)
+    ("f" flycheck-mode "syntax checking" :toggle t)
+    ("h" highlight-indent-guides-mode "highlight indentation" :toggle t)
+    ("w" whitespace-mode "whitespace" :toggle t))
+   "Window"
+   (("z" zoom-mode "zoom mode" :toggle t))))
+
+(general-define-key "<f5>" 'main-window/body)
+
+(general-define-key "C-<tab>" 'hs-toggle-hiding)
+
 (provide 'init-keybinds)
 ;;; init-keybinds.el ends here
