@@ -34,9 +34,9 @@
 (tooltip-mode 0)
 (blink-cursor-mode 0)
 
-;; Favor horizontal splits over vertical ones
-(setq split-width-threshold nil
-      split-height-threshold 160)
+;; Favor vertical splits over horizontal ones
+(setq split-width-threshold 160
+      split-height-threshold nil)
 
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1))
       mouse-whell-progressive-speed nil
