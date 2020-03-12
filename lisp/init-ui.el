@@ -110,6 +110,7 @@
         treemacs-sorting 'alphabetic-case-insensitive-desc))
 
 (use-package treemacs-icons-dired
+  :disabled t
   :demand t
   :config
   (treemacs-icons-dired-mode))
