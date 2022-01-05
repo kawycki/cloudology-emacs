@@ -11,6 +11,18 @@
 
 (column-number-mode)
 
+;;; Scrolling
+
+(setq hscroll-margin 2
+      hscroll-step 1
+      scroll-conservatively 101
+      scroll-margin 0
+      scroll-preserve-screen-position t
+      auto-window-vscroll nil
+      ;; mouse
+      mouse-wheel-scroll-amount '(2 ((shift) . hscroll))
+      mouse-wheel-scroll-amount-horizontal 2)
+
 ;; (fido-mode)
 
 (require 'package)
