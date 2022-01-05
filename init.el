@@ -81,7 +81,7 @@
 
 (use-package modus-operandi-theme)
 
-(load-theme 'modus-operandi t)
+(load-theme 'modus-vivendi t)
 
 (cua-mode)
 (recentf-mode)
