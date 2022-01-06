@@ -65,12 +65,18 @@
   :config
   (add-hook 'go-mode-hook 'lsp-deferred))
 
-(use-package lsp-mode)
+(use-package lsp-mode
+  :commands (lsp-register-client))
 
 (use-package restart-emacs)
 
 (use-package terraform-mode
   :config
+  (lsp-register-client
+   (make-lsp-client :new-connection (lsp-stdio-connection '("/home/linuxbrew/.linuxbrew/bin/terraform-ls" "serve"))
+                  :major-modes '(terraform-mode)
+                  :server-id 'terraform-ls))
+
   (add-hook 'terraform-mode-hook 'lsp-deferred))
 
 (use-package yaml-mode)
