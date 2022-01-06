@@ -69,6 +69,10 @@
 
 (use-package restart-emacs)
 
+(use-package terraform-mode
+  :config
+  (add-hook 'terraform-mode-hook 'lsp-deferred))
+
 (use-package yaml-mode)
 
 (use-package which-key
@@ -105,7 +109,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(doom-modeline all-the-icons dired-sidebar company company-mode restart-emacs csharp-mode vertico modus-operandi-theme modus-vivendi-theme which-key lsp-mode go-mode yaml-mode use-package))
+   '(terraform-mode doom-modeline all-the-icons dired-sidebar company company-mode restart-emacs csharp-mode vertico modus-operandi-theme modus-vivendi-theme which-key lsp-mode go-mode yaml-mode use-package))
  '(which-key-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
