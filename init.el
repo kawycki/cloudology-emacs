@@ -86,6 +86,10 @@
   :config
   (projectile-update-mode-line))
 
+(use-package recentf
+  :ensure nil
+  :bind (("C-c r" . 'recentf-open-files)))
+
 (use-package restart-emacs)
 
 (use-package terraform-mode
