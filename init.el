@@ -50,6 +50,7 @@
 (use-package company)
 
 (use-package diredfl
+  :demand t
   :config
   (diredfl-global-mode))
 
