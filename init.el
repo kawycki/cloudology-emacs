@@ -49,6 +49,12 @@
 
 (use-package company)
 
+(use-package diff-hl
+  :demand t
+  :config
+  (global-diff-hl-mode)
+  (diff-hl-margin-mode))
+
 (use-package diredfl
   :demand t
   :config
@@ -150,7 +156,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(fsharp-mode orderless magit diredfl projectile json-par json-mode marginalia terraform-mode doom-modeline all-the-icons dired-sidebar company company-mode restart-emacs csharp-mode vertico modus-operandi-theme modus-vivendi-theme which-key lsp-mode go-mode yaml-mode use-package))
+   '(diff-hl fsharp-mode orderless magit diredfl projectile json-par json-mode marginalia terraform-mode doom-modeline all-the-icons dired-sidebar company company-mode restart-emacs csharp-mode vertico modus-operandi-theme modus-vivendi-theme which-key lsp-mode go-mode yaml-mode use-package))
  '(which-key-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
