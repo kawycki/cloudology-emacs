@@ -6,7 +6,7 @@
 
 (setq inhibit-startup-screen t
       auto-save-default nil
-      make-backup-file nil
+      make-backup-files nil
       create-lockfiles nil)
 
 (column-number-mode)
