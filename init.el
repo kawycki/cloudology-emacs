@@ -122,6 +122,8 @@
 
   (add-hook 'terraform-mode-hook 'lsp-deferred))
 
+(use-package try)
+
 (use-package yaml-mode)
 
 (use-package which-key
