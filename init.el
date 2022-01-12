@@ -86,6 +86,8 @@
 (use-package lsp-mode
   :commands (lsp-register-client))
 
+(use-package kubel)
+
 (use-package magit
   :bind (("C-x g" . magit-status))
   :config
@@ -156,7 +158,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(diff-hl fsharp-mode orderless magit diredfl projectile json-par json-mode marginalia terraform-mode doom-modeline all-the-icons dired-sidebar company company-mode restart-emacs csharp-mode vertico modus-operandi-theme modus-vivendi-theme which-key lsp-mode go-mode yaml-mode use-package))
+   '(kubel diff-hl fsharp-mode orderless magit diredfl projectile json-par json-mode marginalia terraform-mode doom-modeline all-the-icons dired-sidebar company company-mode restart-emacs csharp-mode vertico modus-operandi-theme modus-vivendi-theme which-key lsp-mode go-mode yaml-mode use-package))
  '(which-key-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
