@@ -130,6 +130,12 @@
   :init
   (which-key-mode))
 
+(use-package windmove
+  :ensure nil
+  :demand t
+  :config
+  (windmove-default-keybindings))
+
 (use-package vertico
   :init
   (vertico-mode)
