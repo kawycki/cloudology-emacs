@@ -61,7 +61,7 @@
   (diredfl-global-mode))
 
 (use-package dired-sidebar
-  :bind (("C-c d" . 'dired-sidebar-toggle-sidebar)))
+  :bind (([f6] . 'dired-sidebar-toggle-sidebar)))
 
 (use-package doom-modeline
   :if (display-graphic-p)
