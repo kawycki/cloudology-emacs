@@ -49,6 +49,14 @@
 
 (use-package consult)
 
+(use-package consult-projectile
+  :bind (("C-x p" . consult-projectile))
+  :config
+  (setq consult-projectile-sources
+  '(consult-projectile--source-projectile-project
+    consult-projectile--source-projectile-file
+    consult-projectile--source-projectile-buffer)))
+
 (use-package company)
 
 (use-package diff-hl
@@ -170,7 +178,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(consult web-mode kubel diff-hl fsharp-mode orderless magit diredfl projectile json-par json-mode marginalia terraform-mode doom-modeline all-the-icons dired-sidebar company company-mode restart-emacs csharp-mode vertico modus-operandi-theme modus-vivendi-theme which-key lsp-mode go-mode yaml-mode use-package))
+   '(consult-projectile consult web-mode kubel diff-hl fsharp-mode orderless magit diredfl projectile json-par json-mode marginalia terraform-mode doom-modeline all-the-icons dired-sidebar company company-mode restart-emacs csharp-mode vertico modus-operandi-theme modus-vivendi-theme which-key lsp-mode go-mode yaml-mode use-package))
  '(which-key-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
